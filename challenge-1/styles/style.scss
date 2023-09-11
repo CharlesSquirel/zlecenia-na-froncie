@@ -1,0 +1,30 @@
+@import "_global";
+@import "_hovers";
+
+.container {
+  display: grid;
+  place-items: center;
+  gap: 50px;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+}
+
+.text {
+  display: flex;
+  gap: 5px;
+  position: relative;
+  font-size: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover {
+    color: $black;
+  }
+}
+
+.text-number {
+  font-weight: 500;
+  font-size: 20px;
+}
