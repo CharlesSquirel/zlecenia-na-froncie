@@ -1,0 +1,45 @@
+.text:hover::after {
+  position: absolute;
+  width: 325px;
+  height: 426px;
+  z-index: 1;
+}
+
+.interiors:hover::after {
+  content: url("../assets/interiors.jpg");
+  top: 50%;
+  transform: translateY(-50%);
+  right: -419px;
+}
+
+.brand:hover::after {
+  content: url("../assets/brand.jpg");
+  top: -20px;
+  right: -420px;
+}
+
+.visual:hover::after {
+  content: url("../assets/visual.jpg");
+  top: 50%;
+  transform: translateY(-50%);
+  left: -510px;
+}
+
+.animation:hover::after {
+  content: url("../assets/animation.jpg");
+  top: 50%;
+  transform: translateY(-50%);
+  right: -420px;
+}
+
+.bunch:hover::after {
+  content: url("../assets/bunch.jpg");
+  top: -300px;
+  right: -420px;
+}
+
+.rumors:hover::after {
+  content: url("../assets/rumors.jpg");
+  top: -200px;
+  left: -350px;
+}
