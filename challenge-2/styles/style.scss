@@ -1,0 +1,38 @@
+@import "_global";
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 500px;
+  left: -50px;
+  height: 103px;
+  width: calc(100vw + 100px);
+  background-color: $green;
+  white-space: nowrap;
+  transform: rotate(-8.323deg);
+}
+
+.text {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 52px;
+  letter-spacing: 2.08px;
+  text-transform: uppercase;
+  color: $blue;
+  animation: slide 50s linear infinite;
+  &:hover {
+    cursor: pointer;
+    animation-play-state: paused;
+  }
+}
