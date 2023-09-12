@@ -1,0 +1,16 @@
+$blue: #05077d;
+$green: #75fb8e;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: $blue;
+  font-family: "Anton", sans-serif;
+  overflow: hidden;
+}

@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #05077d;
+  font-family: "Anton", sans-serif;
+  overflow: hidden;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 500px;
+  left: -50px;
+  height: 103px;
+  width: calc(100vw + 100px);
+  background-color: #75fb8e;
+  white-space: nowrap;
+  transform: rotate(-8.323deg);
+}
+
+.text {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 52px;
+  letter-spacing: 2.08px;
+  text-transform: uppercase;
+  color: #05077d;
+  animation: slide 50s linear infinite;
+}
+.text:hover {
+  cursor: pointer;
+  animation-play-state: paused;
+}/*# sourceMappingURL=style.css.map */
