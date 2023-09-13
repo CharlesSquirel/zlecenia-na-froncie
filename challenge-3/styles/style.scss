@@ -1,0 +1,69 @@
+@import "_global";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 380px;
+}
+
+.popup-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: $white;
+  width: 582px;
+  height: 251px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.15);
+  animation: shake 0.4s;
+}
+
+.btn,
+.btn-close {
+  display: grid;
+  place-items: center;
+  height: 36px;
+  border-radius: 40px;
+  background-color: $purple;
+  text-transform: uppercase;
+  color: $light-purple;
+  &:hover {
+    background-color: $light-purple;
+    color: $purple;
+  }
+}
+
+.btn {
+  width: 100px;
+}
+
+.btn-close {
+  width: 150px;
+}
+
+.text {
+  text-align: center;
+}
+
+@keyframes shake {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
