@@ -1,0 +1,29 @@
+$black: #000;
+$white: #fff;
+$purple: #6A6EF7;
+$light-purple: #DCDEFD;
+$popup-bg: #00000080;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  // background-color: $popup-bg
+}
+
+button {
+  font-family: inherit;
+  font-weight: inherit;
+  border: none;
+  cursor: pointer;
+}
