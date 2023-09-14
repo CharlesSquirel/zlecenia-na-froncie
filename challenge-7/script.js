@@ -7,6 +7,9 @@ const toogle = (e) => {
   const targetText = document.querySelector(`.${arrowToChange.dataset.target}`);
   if (!arrowToChange) return;
   if (!targetText) return;
+  texts.forEach((text) => {
+    text.classList.remove("show-text");
+  });
   arrowToChange.classList.toggle("arrow-rotate");
   targetText.classList.toggle("show-text");
 };
