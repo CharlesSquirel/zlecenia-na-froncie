@@ -1,0 +1,80 @@
+@import "_global";
+
+.title {
+  align-self: flex-start;
+  font-family: "Inknut Antiqua", serif;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.faq-title {
+  font-size: 36px;
+}
+
+.faq-subtitle,
+.faq-section-title {
+  font-size: 18px;
+}
+
+.faq-section-description {
+  display: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  padding-right: 80px;
+  animation-name: questionTransition;
+  animation-timing-function: ease-in-out;
+  animation-duration: 500ms;
+}
+
+.faq-container,
+.faq-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-section {
+  gap: 20px;
+}
+
+.faq-container {
+  gap: 30px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 555px;
+}
+
+.faq-section-title-box {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid $black;
+}
+
+.arrow-img {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.arrow-rotate {
+  transform: rotate(90deg);
+}
+
+.show-text {
+  display: block;
+}
+
+@keyframes questionTransition {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
