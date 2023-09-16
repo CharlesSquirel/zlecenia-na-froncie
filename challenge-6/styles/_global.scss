@@ -1,0 +1,32 @@
+$black: #000;
+$white: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-weight: 500;
+  padding: 40px;
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  font-family: inherit;
+  font-weight: inherit;
+  border: none;
+  background-color: transparent;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button,
+li {
+  cursor: pointer;
+}
